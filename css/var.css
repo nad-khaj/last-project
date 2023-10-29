@@ -1,0 +1,48 @@
+:root{
+    font-size: 0.625rem;
+    --bg-color-gray : #eeeeee;
+    --red-color : #ce1212;
+    --font-color-gray :#8E8291;
+}
+.list-style-none{
+    list-style: none;
+}
+.font-size-2{
+    font-size : 2rem;
+}
+.w-100{
+    width : 100%;
+}
+.w-100-h-fit-c {
+    width : 100%;
+    height: fit-content;
+}
+.d-flex{
+    display : flex;
+}
+.d-flex-column{
+    display : flex;
+    flex-direction: column;
+}
+.just-c{
+    display : flex;
+    justify-self: center;
+}
+.align-c{
+    display : flex;
+    align-items: center;
+}
+.just-c-align-c{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.gap-20{
+    gap : 20px;
+}
+.gap-30{
+    gap : 30px;
+}
+.transition-200{
+    transition: all 200ms linear;
+}

@@ -1,0 +1,1153 @@
+@media only screen and (min-width : 1201px){ 
+/* ******************************************** Header ******************************************** */
+section.top{
+    height: 92px;
+    background-color: white;
+    position: fixed;
+    z-index: 10;
+}
+section.top>label{
+    font-size :3rem;
+    padding-right: 40px;
+    display: none;
+}
+div.logo{
+    width: 20%;
+    height: inherit;
+}
+div.logo>h1{
+   font-size: 4rem;
+   padding-right: 50px;
+}
+div.logo>h1>span{
+    color : var(--red-color)
+}
+/* *****************************************  Menu ************************************************** */
+div.menu{
+    width : 80%;
+    height: inherit;
+}
+div.menu>nav>ul>li{
+    width : 100px;
+    height: inherit;
+    line-height: 92px;
+}
+div.menu>nav>ul>li:nth-of-type(1)>a{
+    color : black;
+    border-bottom :2px solid var(--red-color);
+}
+div.menu>nav>ul>li>a{
+    width : 100%;
+    color : var(--font-color-gray);
+    transition: all 500ms all;
+}
+div.menu>nav>ul>li>a:hover{
+    border-bottom :2px solid var(--red-color);
+    color: black;
+}
+a>i{
+    padding-right  : 20px;
+}
+/* **************************************** SubMenu1 *********************************************** */
+div.menu>nav>ul>li:nth-of-type(7)>ul{
+    width : 150px;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 2px 2px 10px gray;
+    position: absolute;
+    top :60px;
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    visibility: hidden;
+    transform: translateX(-100);
+    transition: all 200ms linear;
+}
+div.menu>nav>ul>li:nth-of-type(7):hover>ul{
+    visibility:visible;
+    transform: translate(0);
+}
+div.menu>nav>ul>li:nth-of-type(7)>ul>li{
+    width : 100%;
+    height: 50px;
+}
+div.menu>nav>ul>li:nth-of-type(7)>ul>li>a{
+    color : var(--font-color-gray);
+
+}
+div.menu>nav>ul>li:nth-of-type(7)>ul>li>a:hover{
+    color : var(--red-color);
+
+}
+/* ************************************************* SubMenu2 ********************************************* */
+div.menu>nav>ul>li:nth-of-type(7)>ul>li:nth-of-type(2)>ul{
+    width : 150px;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 2px 2px 10px gray;
+    position: absolute;
+    top :100px;
+    right : 130px;
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    visibility: hidden;
+    transition: all 200ms linear;
+}
+div.menu>nav>ul>li:nth-of-type(7)>ul>li:nth-of-type(2):hover>ul{
+    visibility: visible;
+}
+div.menu>nav>ul>li:nth-of-type(7)>ul>li:nth-of-type(2)>ul>li{
+    width : 150px;
+    height: 50px;
+}
+div.menu>nav>ul>li:nth-of-type(7)>ul>li:nth-of-type(2)>ul>li>a{
+    color: var(--font-color-gray);
+    transition: all 200ms linear;
+}
+div.menu>nav>ul>li:nth-of-type(7)>ul>li:nth-of-type(2)>ul>li>a:hover{
+    color: var(--red-color);
+}
+/* ****************************************** Sandwich Menu ***************************************** */
+header>section>input{
+    display: none;
+}
+div.sand-menu{
+    width : 20%;
+    height : 100vh;
+    position: fixed;
+    background-color:rgba(251, 251, 251, 0.918);
+    transform: translateX(100%);
+    transition: all 300ms linear;
+}
+div.sand-menu>nav{
+    height: inherit;
+}
+div.sand-menu>nav>label{
+    font-size : 2rem;
+    margin-right : 280px;
+     display: none;
+} 
+div.sand-menu>nav>ul{
+    height: inherit;
+    padding-top : 65px;
+    gap : 10px;
+}
+input#sand-menu:checked~div.sand-menu{
+    transform: translateX(0);
+
+}
+div.sand-menu>nav>ul>li{
+    width : 100%;
+    height: 30px;
+    padding-right: 20px;
+}
+div.sand-menu>nav>ul>li:nth-of-type(1){
+    border-bottom :2px solid var(--red-color);
+}
+div.sand-menu>nav>ul>li:nth-of-type(1)>a{
+    color : black;
+}
+div.sand-menu>nav>ul>li>a{
+    width : 100%;
+    color : var(--font-color-gray);
+    transition: all 500ms all;
+}
+div.sand-menu>nav>ul>li:hover{
+    border-bottom :2px solid var(--red-color);
+}
+div.sand-menu>nav>ul>li:hover>a{
+    color: black;
+}
+a>i{
+    padding-right  : 20px;
+}
+/* **************************************** sand-SubMenu1 *********************************************** */
+div.sand-menu>nav>ul>li:nth-of-type(7)>ul{
+    width : 100%;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 2px 2px 10px gray;
+    position: absolute;
+    top :340px;
+    right : 0px;
+    text-align: right;
+    padding: 20px;
+    padding-bottom: 30px;
+    visibility: hidden;
+    transition: all 200ms linear;
+}
+div.sand-menu>nav>ul>li:nth-of-type(7):hover>ul{
+    visibility:visible;
+}
+div.sand-menu>nav>ul>li:nth-of-type(7):hover~li:nth-of-type(8){
+    padding-top: 225px;
+}
+div.sand-menu>nav>ul>li:nth-of-type(7)>ul>li{
+    width : 100%;
+    height: 50px;
+}
+div.sand-menu>nav>ul>li:nth-of-type(7)>ul>li>a{
+    color : var(--font-color-gray);
+
+}
+div.sand-menu>nav>ul>li:nth-of-type(7)>ul>li>a:hover{
+    color : var(--red-color);
+
+}
+/* ************************************************* SubMenu2 ********************************************* */
+div.sand-menu>nav>ul>li:nth-of-type(7)>ul>li:nth-of-type(2)>ul{
+    width : 100%;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 2px 2px 10px gray;
+    position: absolute;
+    top :90px;
+    right : 0px;
+    text-align: right;
+    padding : 20px;
+    visibility: hidden;
+    transition: all 200ms linear;
+}
+div.sand-menu>nav>ul>li:nth-of-type(7)>ul>li:nth-of-type(2):hover>ul{
+    visibility: visible;
+}
+div.sand-menu>nav>ul>li:nth-of-type(7)>ul>li:nth-of-type(2):hover~li:nth-child(3){
+    padding-top : 220px;
+}
+div.sand-menu>nav>ul>li:nth-of-type(7)>ul>li:nth-of-type(2):hover~li:nth-child(4){
+    padding-top : 30px;
+}
+div.sand-menu>nav>ul>li:nth-of-type(7)>ul>li:nth-of-type(2)>ul>li{
+    width : 150px;
+    height: 40px;
+}
+div.sand-menu>nav>ul>li:nth-of-type(7)>ul>li:nth-of-type(2)>ul>li>a{
+    color: var(--font-color-gray);
+    transition: all 200ms linear;
+}
+div.sand-menu>nav>ul>li:nth-of-type(7)>ul>li:nth-of-type(2)>ul>li>a:hover{
+    color: var(--red-color);
+}
+/* ******************************************** Booking ********************************************* */
+div.book{
+    width: 20%;
+    height: inherit;
+
+}
+
+div.book>a{
+    background-color: var(--red-color);
+    color: white;
+    font-size: 2rem;
+    padding : 10px 20px;
+    border-radius: 20px;
+    margin-top : 20px;
+    transition: all 200ms linear;
+}
+div.book>a:hover{
+    opacity : 60%;
+}
+
+
+/* *******************************************End Of Header ***************************************** */
+section.container{
+    height:100vh;
+    background-color: var(--bg-color-gray);
+    display : grid;
+    grid-template-columns: repeat(2,1fr);
+}
+section.container>div:first-child{
+    width : 100%;
+    height: inherit;
+    margin-top: 120px;
+    margin-right: 50px;
+}
+section.container>div:first-child>img{
+    width: 80%;
+    height: auto;
+    display: block;
+}
+
+section.container>div:last-child>h2{
+    width : 50%;
+    text-align: center;
+    font-size : 4rem;
+}
+section.container>div:last-child>p{
+    width : 80%;
+    text-align: center;
+    font-size : 1.8rem;
+    color : var(--font-color-gray);
+    line-height: 30px;
+}
+section.container>div:last-child>div>a:first-child{
+    background-color: var(--red-color);
+    color: white;
+    font-size: 2rem;
+    padding : 10px 20px;
+    border-radius: 20px;
+    margin-top : 20px;
+    transition: all 200ms linear;
+}
+section.container>div:last-child>div>a:first-child:hover{
+    opacity : 60%;
+}
+section.container>div:last-child>div>a:last-child{
+    font-size: 2rem;
+    color: black;
+}
+section.container>div:last-child>div>a:last-child:hover{
+    color: var(--red-color);
+}
+section.container>div:last-child>div>a:last-child>i{
+    margin-top: 20px;
+    margin-left: 5px;
+    padding : 5px 8px;
+    color: var(--red-color);
+    border: 2px solid var(--red-color);
+    border-radius: 50%;
+}
+/* ************************************About Us************************************* */
+section.about-us{
+    background-color: white;
+    
+}
+section.about-us>h4{
+    color :var(--font-color-gray);
+    font-size : 2rem;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+section.about-us>h2{
+    color : black;
+    font-size : 3rem;
+    text-align: center;
+    line-height: 20px;
+}
+section.about-us>h2>span{
+    color :var(--red-color);
+}
+section.about-us>div.about{
+ justify-content:flex-end;
+}
+section.about-us>div.about>div.about-img1{
+    width : 60%;
+    height: fit-content;
+    padding: 50px;
+    padding-top: 100px;
+    position: relative;
+}
+section.about-us>div.about>div.about-img1>img{
+    width : 100%;
+    height: auto;
+    display: block;
+
+}
+section.about-us>div.about>div.about-img1>div.book-table{
+    width :60%;
+    height: 150px;
+    background-color: white;
+    position: absolute;
+    bottom : 15%;
+    right :  20%;
+}
+section.about-us>div.about>div.about-img1>div.book-table>h2{
+    padding-top: 5%;
+    font-size : 3rem;
+    text-align: center;
+}
+section.about-us>div.about>div.about-img1>div.book-table>h3{
+    font-size : 2.5rem;
+    color: var(--red-color);
+    text-align: center;
+    padding-top: 2%;
+}
+section.about-us>div.about>div.about-img2{
+    width : 40%;
+    height: inherit;
+    padding : 0px 50px;
+}
+section.about-us>div.about>div.about-img2>img{
+    width : 20%;
+    height: auto;
+}
+section.about-us>div.about>div.about-img2>p{
+    font-size : 1.5rem;
+    color: var(--font-color-gray);
+    padding-bottom: 25px;
+}
+section.about-us>div.about>div.about-img2>p>i{
+    color: var(--red-color);
+}
+section.about-us>div.about>div.about-img2>img{
+    width : 100%;
+    height: auto;
+    display: block;
+
+}
+/* ***********************************************part-choose**************************************** */
+section.choose{
+    height : 550px;
+    background-color: var(--bg-color-gray);
+    padding: 50px;
+    flex-wrap: wrap;
+}
+section.choose>div.choose1{
+    width : 30%;
+    background-color: var(--red-color); 
+    color : white;
+}
+section.choose>div.choose1>h2{
+    font-size : 4rem;
+    padding : 60px;
+    padding-bottom: 0px;
+}
+section.choose>div.choose1>p{
+    padding : 40px;
+    font-size: 1.9rem;
+    line-height: 30px;
+
+
+}
+section.choose>div.choose2{
+    width : 60%;
+    height: inherit;
+    display : grid;
+    grid-template-columns: repeat(3 , 1fr);
+    background-color: var(--bg-color-gray); 
+    padding-top: 100px;
+    padding-right: 25px;
+    gap : 25px;
+}
+section.choose>div.choose2>div.card{
+    width : 100%;
+    height: 350px;
+    background-color: white;
+    padding-top: 20px;
+    transition: all 200ms linear;
+
+
+}
+section.choose>div.choose2>div.card:hover{
+    transform: scale(1.1);
+}
+section.choose>div.choose2>div.card>i{
+    font-size: 3rem;
+    color : var(--red-color);
+    background-color: #fae7e7;
+    border-radius: 50%;
+    padding: 10px 15px;
+    text-align: center;
+}
+section.choose>div.choose2>div.card>h2{
+    font-size: 2rem;
+    color : black;
+    padding: 10px 30px;
+    text-align: center;
+}
+section.choose>div.choose2>div.card>p{
+    font-size: 1.8rem;
+    color : var(--font-color-gray);
+    padding: 10px 30px;
+    padding-top: 10px;
+    text-align: center;
+}
+/* ************************************************amar************************************** */
+section.counter{
+    height : 355px;
+    background-image: url(./../image/stats-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+section.counter>div.black{
+    height: inherit;
+    background-color: rgba(9, 9, 9, 0.565);
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 3rem;
+    color : white;
+    padding-top: 150px;
+    padding-right: 150px;
+    text-align: center;
+    
+}
+section.counter>div.black>div>h3:last-child{
+    color : #aeaaa7
+}
+/* ***************************************************Our Menu*************************************** */
+section.our-menu{
+    background-color:white;
+
+    
+}
+section.our-menu>h4{
+    color :var(--font-color-gray);
+    font-size : 2rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+section.our-menu>h2{
+    color : black;
+    font-size : 3rem;
+    text-align: center;
+    line-height: 20px;
+}
+section.our-menu>h2>span{
+    color :var(--red-color);
+}
+section.our-menu>ul{
+    padding-top : 50px;
+    padding-right : 42%;
+}
+
+section.our-menu>ul>li>a{
+    color : var(--font-color-gray);
+    border-bottom: 2px solid var(--font-color-gray);
+    transition: all 200ms linear;
+    cursor: pointer;
+}
+section.our-menu>ul>li>a:hover{
+    color : var(--red-color);
+    border-bottom: 2px solid var(--red-color);
+}
+section.our-menu>h2#menu-name{
+    color :var(--red-color);
+}
+div.menus{
+    height : inherit;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    padding-right : 100px;
+    padding-top: 5px;
+}
+div.menus>div.menu-item{
+    width: 60%;
+    height: auto;
+    padding-top: 50px;
+    padding-right: 50px;
+
+}
+div.menus>div.menu-item>img{
+    width: 100%;
+    height: auto;
+    
+}
+div.menus>div.menu-item>h2{
+    color : black;
+    font-size : 3rem;
+    text-align: center;
+    line-height: 40px;
+}
+div.menus>div.menu-item>h2:last-child{
+    color : var(--red-color);
+    font-size : 3rem;
+    text-align: center;
+    line-height: 40px;
+}
+div.menus>div.menu-item>p{
+    color :var(--font-color-gray);
+    font-size : 2rem;
+    text-align: center;
+    line-height: 30px;
+}
+/* **************************************** Testominals************************************** */
+section.testimonials{
+    height : 500px;
+    background-color: var(--bg-color-gray);
+}
+section.testimonials>h4{
+    color :var(--font-color-gray);
+    font-size : 2rem;
+    text-align: center;
+    padding-bottom : 40px;
+    padding-top: 50px;
+    
+}
+section.testimonials>h2{
+    color : black;
+    font-size : 3rem;
+    text-align: center;
+    line-height: 20px;
+}
+section.testimonials>h2>span{
+    color :var(--red-color);
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+div.swiper-slide {
+    width: 100%;
+    height: 220px;
+    display : flex;
+    margin-top: 50px;
+  }
+  div.swiper-slide>div.space{
+    width : 20%;
+    height: inherit;
+  }
+  div.swiper-slide>div.image{
+    width : 20%;
+    height: inherit;
+  }
+
+  div.swiper-slide>div.image>img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border:5px solid white;
+    border-radius: 50%;
+  }
+  .swiper-slide>div.comments{
+    width : 40%;
+    height: inherit;
+    border-left: 5px solid var(--red-color);
+    padding-top : 20px;
+
+  }
+
+  .swiper-slide>div.comments>h2 {
+    color : black;
+    font-size : 3rem;
+    text-align: center;
+    line-height: 40px;
+  }    
+  .swiper-slide>div.comments>p{
+    color :var(--font-color-gray);
+    font-size : 2rem;
+    text-align: center;
+    line-height: 25px;
+    padding-bottom: 10px;;
+  }
+  .swiper-slide>div.comments>p>span{
+    font-size:4rem;
+    color :var(--red-color);
+}
+div.comments>div.stars{
+    align-self: center;
+}
+div.comments>div.stars>i{
+    font-size : 2rem;
+    color : #ffc107;
+}
+/* *****************************************Events ************************************** */
+section.events{
+    height : 700px;
+    background-color: white;
+}
+section.events>h4{
+    color :var(--font-color-gray);
+    font-size : 2rem;
+    text-align: center;
+    padding-bottom : 40px;
+    padding-top: 50px;
+    
+}
+section.events>h2{
+    color : black;
+    font-size : 3rem;
+    text-align: center;
+    line-height: 20px;
+}
+section.events>h2>span{
+    color :var(--red-color);
+}
+section.events>div.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+section.events>div.swiper-slide {
+    width: 100%;
+    height: 220px;
+    display : flex;
+    margin-top: 50px;
+  }
+div.container{
+    width :100%;
+    height: 550px;
+    display : grid;
+    grid-template-columns: repeat(3,1fr);
+    gap : 20px
+
+}
+div.container>div.card{
+    width :100%;
+    height: inherit;
+    position: relative;
+}
+div.container>div.card>img{
+    width : 100%;
+    height: inherit;
+    object-fit: cover;
+}
+div.container>div.card>div.black{
+    width : 100%;
+    height: inherit;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.566);
+    top : 0;
+}
+div.container>div.card>h2{
+    color : white;
+    font-size : 3rem;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top:300px;
+    right : 20px;
+}
+div.container>div.card>h3{
+    color : white;
+    font-size : 3rem;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--red-color);
+    top:350px;
+    right : 20px;
+}
+div.container>div.card>p{
+    color : white;
+    font-size : 1.5rem;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    padding : 20px;
+    top:400px;
+
+}
+
+section.events>div.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  section.events>div.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.events>div.swiper-slide>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* **************************************** Chefs************************************** */
+section.chefs{
+    height : fit-content;
+    background-color: var(--bg-color-gray);
+    padding-top : 100px;
+}
+section.chefs>h4{
+    color :var(--font-color-gray);
+    font-size : 2rem;
+    text-align: center;
+    padding-bottom : 40px;
+    padding-top: 50px;
+    
+}
+section.chefs>h2{
+    color : black;
+    font-size : 3rem;
+    text-align: center;
+    line-height: 20px;
+    padding-bottom: 50px;
+}
+section.chefs>h2>span{
+    color :var(--red-color);
+}
+section.chefs>div.chef-cards{
+    width : 95%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 430px);
+    gap: 20px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    overflow-wrap: break-word;
+  
+}
+section.chefs>div.chef-cards>div.chef{
+    width: 430px;
+    height: inherit;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    transition: all 200ms linear;
+}
+section.chefs>div.chef-cards>div.chef>img.img1{
+    width: 430px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+section.chefs>div.chef-cards>div.chef>img.img2{
+    width: 430px;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    bottom:25%;
+    right: 0;
+    z-index :5;
+
+}
+div.chef>h2{
+    width: 430px;
+    color : black;
+    font-size : 2.5rem;
+    text-align: center;
+}
+div.chef>h4{
+    width: 430px;
+    color :var(--font-color-gray);
+    font-size : 2rem;
+    text-align: center;
+    
+}
+div.chef>p{
+    width: 430px;
+    color :var(--font-color-gray);
+    font-size : 1.8rem;
+    text-align: center;
+    line-height: 20px;
+    padding: 20px;
+    
+}
+section.chefs>div.chef-cards>div.chef>div.social{
+    width : 30px;
+    height: 120px;
+    background-color: #ece4de6a;
+    color: var(--font-color-gray);
+    border-radius: 5px;
+    font-size : 1.8rem;
+    gap:10px;
+    position : absolute;
+    top : 20px;
+    right : 10px;
+    transition: all 300ms linear;
+    visibility: hidden;
+    transform: translateX(40%);
+}
+section.chefs>div.chef-cards>div.chef:hover{
+    transform: scale(1.05);
+}
+section.chefs>div.chef-cards>div.chef:hover>div.social{
+    visibility: visible;
+    transform: translateX(-10px);
+}
+/* *****************************************Book Table ************************************** */
+section.book-table{
+    height : 700px;
+    background-color: white;
+}
+section.book-table>h4{
+    color :var(--font-color-gray);
+    font-size : 2rem;
+    text-align: center;
+    padding-bottom : 40px;
+    padding-top: 50px;
+    
+}
+section.book-table>h2{
+    color : black;
+    font-size : 3rem;
+    text-align: center;
+    line-height: 20px;
+}
+section.book-table>h2>span{
+    color :var(--red-color);
+}
+div.reservation{
+    width : 90%;
+    height: 500px;
+    background-color: var(--bg-color-gray);
+    margin : 50px 100px;
+} 
+div.reservation>div.image{
+    width : 30%;
+    height: inherit;
+}
+div.reservation>div.image>img{
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+div.reservation>div.booking{
+    width: 70%;
+    height: inherit;
+    flex-wrap: wrap;
+    gap : 5px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+   
+}
+div.reservation>div.booking>input{
+    width : 270px;
+    height: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    border: none;
+    
+}
+div.reservation>div.booking>textarea{
+    width : 900px;
+    height: 130px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: 1.5rem;
+    resize: none;
+    border: none;
+}
+div.reservation>div.booking>a{
+    background-color: var(--red-color);
+    color: white;
+    font-size: 2rem;
+    padding : 10px 20px;
+    border-radius: 20px;
+    margin-top : 20px;
+    transition: all 200ms linear;
+}
+div.reservation>div.booking>a:hover{
+    opacity : 60%;
+}
+/* **************************************** Gallery ************************************** */
+section.gallery{
+    width : 100%;
+    height: fit-content;
+    background-color: var(--bg-color-gray);
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+section.gallery>h4{
+    color :var(--font-color-gray);
+    font-size : 2rem;
+    text-align: center;
+    padding-bottom : 40px;
+    padding-top: 50px;
+    
+}
+section.gallery>h2{
+    color : black;
+    font-size : 3rem;
+    text-align: center;
+    line-height: 20px;
+    padding-bottom: 30px;
+}
+section.gallery>h2>span{
+    color :var(--red-color);
+}
+section.gallery .swiper {
+    width: 100%;
+    height: inherit;
+  }
+
+  section.gallery .swiper-slide {
+    width: 100%;
+    height: 300px;
+    display :grid;
+    grid-template-columns: repeat(2,1fr);
+    gap : 30px;
+    background-position: center;
+    background-size: cover;
+    height: inherit;
+  }
+  section.gallery div.swiper-slide>img {
+    width : 90%;
+    height: auto;
+    border : 4px double var(--red-color);
+    object-fit: cover;
+  }
+/* **************************************** Contat-Us ************************************** */
+section.contact-us{
+    width : 100%;
+    height: fit-content;
+    padding : 50px;
+    margin-bottom: 50px;
+}
+    section.contact-us>h4{
+        color :var(--font-color-gray);
+        font-size : 2rem;
+        text-align: center;
+        padding-bottom : 40px;
+        padding-top: 50px;
+        
+    }
+    section.contact-us>h2{
+        color : black;
+        font-size : 3rem;
+        text-align: center;
+        line-height: 20px;
+        padding-bottom: 30px;
+    }
+    section.contact-us>h2>span{
+        color :var(--red-color);
+    }
+    section.contact-us>div.adds{
+        width : 100%;
+        height: fit-content;
+        display: grid;
+        gap : 20px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        margin-top: 20px;
+    }
+    section.contact-us>div.adds>div.item{
+        width : 100%;
+        height: 115px;
+        padding : 50px;
+        background-color: var(--bg-color-gray);
+    }
+    section.contact-us>div.adds>div.item>i{
+        font-size : 2.5rem;
+        color: white;
+        padding: 20px;
+        background-color: var(--red-color);
+        border-radius: 50%;
+    }
+    section.contact-us>div.adds>div.item>div.description{
+        width : 100%;
+        height: 115px;
+        justify-content: center;
+    }
+    section.contact-us>div.adds>div.item>div.description>h2{
+        font-size: 2.5rem;
+        color : var(--font-color-gray);
+        padding-right: 20px;
+    }
+    section.contact-us>div.adds>div.item>div.description>h4{
+        font-size: 2rem;
+        color : black;
+        padding-right: 20px;
+    }
+    section.contact-us>div.contactus{
+        width : 100%;
+        height: inherit;
+        flex-wrap: wrap;
+        color : black;
+        font-size: 1.8rem;
+        box-shadow: 5px 5px 20px 2px var(--bg-color-gray);
+        margin-top: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    section.contact-us>div.contactus>input{
+        width : 45%;
+        height: 50px;
+        border : 1px solid var(--bg-color-gray);
+        padding-right: 10px;
+    }
+    section.contact-us>div.contactus>input.long{
+        width : 92%;
+        height: 50px;
+    }
+    section.contact-us>div.contactus>textarea{
+        width : 92%;
+        height: 150px;
+        border : 1px solid var(--bg-color-gray);
+        padding-right: 10px;
+        padding-top: 10px;
+        resize: none;
+    }
+    section.contact-us>div.contactus>a{
+        background-color: var(--red-color);
+        color: white;
+        font-size: 2rem;
+        padding : 10px 20px;
+        border-radius: 20px;
+        margin-top : 20px;
+        transition: all 200ms linear;
+    }
+    section.contact-us>div.contactus>a:hover{
+        opacity : 60%;
+  
+    }
+
+/* **************************************** Footer ************************************** */
+footer{
+    height: fit-content;
+    
+}
+footer>div.home{
+    width : 100px;
+    height: 100px;
+    position: fixed;    
+    z-index: 12;
+    display: block;
+    bottom : -50px;   
+}
+   
+div.home>a>i{
+    font-size: 4rem;
+    color: var(--red-color);
+}
+div.footer1{
+    height : 170px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-left: 100px;
+    padding-right : 100px;
+    
+   
+
+}
+div.footer1>div.item{
+    height : inherit;
+    color :white;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    border-bottom: 0.05px solid rgba(199, 197, 197, 0.39);
+}
+div.footer1>div.item>h2{
+    font-size : 2.5rem;
+    line-height: 40px;
+    color :white;
+}
+div.footer1>div.item>h4{
+    font-size : 2rem;
+    color: rgb(199, 197, 197);
+    line-height: 30px;
+    padding-right: 20px;
+}
+div.footer1>div.item>h2>i{
+    color: rgb(199, 197, 197);
+}
+div.footer1>div.item>div.social{
+    font-size: 2rem;
+    color: rgb(199, 197, 197);
+    gap : 10px;
+}
+div.footer1>div.item>div.social>i{
+    padding : 10px;
+    border: 1px solid rgb(199, 197, 197) ;
+    border-radius: 50%;
+}
+div.footer2{
+    height : 130px;
+    background-color: black;
+    color:rgb(199, 197, 197) ;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+}
+}

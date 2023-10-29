@@ -1,0 +1,15 @@
+@import url(./../css/var.css);
+@import url(./../css/xl.css);
+@import url(./../css/l.css);
+@import url(./../css/m.css);
+@import url(./../css/s.css);
+@import url(./../css/xs.css);
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+    
