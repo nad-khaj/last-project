@@ -558,7 +558,7 @@ div.menus>div.menu-item>p{
     text-align: center;
     line-height: 30px;
 }
-/* **************************************** Testominals************************************** */
+/* ******************************************** Testominals**************************************** */
 section.testimonials{
     height : 500px;
     background-color: var(--bg-color-gray);
@@ -639,7 +639,7 @@ div.comments>div.stars>i{
     font-size : 2rem;
     color : #ffc107;
 }
-/* *****************************************Events ************************************** */
+/* *******************************************Events **************************************** */
 section.events{
     height : 700px;
     background-color: white;
